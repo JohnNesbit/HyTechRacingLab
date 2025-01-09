@@ -17,7 +17,7 @@ overlays = [ self.overlays.default ];
 };
 in
 {
-packages.x86_64-linux.hello_lib = pkgs.hello_lib;
+packages.x86_64-linux.hellolib = pkgs.hello_lib;
 packages.x86_64-linux.default = pkgs.hello_lib;
 
 overlays.default = nixpkgs.lib.composeManyExtensions my_overlays;
